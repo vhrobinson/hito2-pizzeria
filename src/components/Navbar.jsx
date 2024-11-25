@@ -4,7 +4,7 @@ function Navbar() {
     const total = 25000;
     const token = false;
   return (
-    <>
+    
   <nav classNamename="bg-gray-800">
   <div className="px-2 sm:px-6 lg:px-8 h-14 bg-gradient-to-r from-purple-600 to-pink-600">
     <div className="relative flex h-16 items-center justify-between">
@@ -71,7 +71,7 @@ function Navbar() {
   
 </nav>
 
-    </>
+    
   )
 }
 
