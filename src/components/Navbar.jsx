@@ -1,7 +1,10 @@
-import { formatCurr } from "../utils/formatCurr";
-import { TiShoppingCart } from "react-icons/ti";
-import LoginPage from "../pages/components/LoginPage";
-import Register from "../pages/components/Register";
+
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { formatCurr } from "../utils/formatCurr"
+import { TiShoppingCart } from "react-icons/ti"
+import LoginPage from "../pages/components/LoginPage"
+import Register from "../pages/components/Register"
 function Navbar() {
   const total = 25000;
   const token = false;
@@ -42,8 +45,9 @@ function Navbar() {
                     </div>
                   ) : (
                     <div>
-                      <a href="#" onClick={<Register/>} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Login</a>
-                      <a  href="#" onClick={<LoginPage/>} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Register</a>
+                      <a  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><Link to="/"> Home</Link></a>
+                      <a  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><Link to="/login">Login</Link></a>
+                      <a  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><Link to="/register">Register</Link></a>
                     </div>
                   )
                   }
