@@ -22,7 +22,8 @@ function App() {
 
         </Router>    
      
-        
+      /*agregu'e en el packega.jso la dependencia "react-router-dom": "^7.0.1"
+      con npm install react-router-dom*/
       
     
   )
